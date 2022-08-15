@@ -12,6 +12,17 @@ https://aws.amazon.com/jp/blogs/news/creating-a-machine-learning-powered-rest-ap
 
 [使用する技術]
 
-・AWS(sagemaker、sagemakerendpoint、apigateway)
+・AWS(sagemaker、sagemakerendpoint、apigateway、S3)
 ・BERT
 ・python
+
+## 4つの手順
+
+### 1.モデルファイルと同じ階層にcodeフォルダを作成し、そこにトークナイザとモデルの読み込みおよび推論処理を実装した推論スクリプトinference.pyと追加でインストールする必要のあるライブラリを記載したテキストファイルrequirements.txtを配置しそれらを格納したtar.gz形式のファイルを作成する。
+
+### 2.作成したtar.gz形式のファイルをS3にアップロード
+
+### 3.SageMaker Python SDKのHuggingFaceModelクラスのmodel_data引数にtar.gz形式のファイルのアップロード先のS3パスを指定し、deployメソッドによりモデルをデプロイしたエンドポイントを作成する。
+
+### 4.作成されたエンドポイントに対してpredictメソッドにより推論を実行する。
+
