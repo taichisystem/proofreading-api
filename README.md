@@ -29,3 +29,18 @@ https://aws.amazon.com/jp/blogs/news/creating-a-machine-learning-powered-rest-ap
 ### 5.作成されたエンドポイントに対してpredictメソッドにより推論を実行する。
 
 注意：モデル保存は、bert.ipynbで、またtar.gz形式のファイル作成は各自で行ってください。
+
+
+## 結果（GET、POST）今回は、野→の、先行→専攻の校正がしっかりできているのか見てみる。
+
+### GETメソッドを使って実装した場合
+
+#### sentence=<'校正前文章'>
+
+![スクリーンショット (113)](https://user-images.githubusercontent.com/62798122/185280305-bef6ebba-970c-4c9d-8021-acb8220a32c9.jpg)
+
+### POSTメソッドを使って実装した場合
+
+#### 校正ボタンを押して校正する。
+
+![スクリーンショット (112)](https://user-images.githubusercontent.com/62798122/185280649-2a852c83-9ad3-4fed-b1b1-96d31524ed90.png)
