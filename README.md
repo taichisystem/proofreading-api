@@ -28,4 +28,4 @@ https://aws.amazon.com/jp/blogs/news/creating-a-machine-learning-powered-rest-ap
 
 ### 5.作成されたエンドポイントに対してpredictメソッドにより推論を実行する。
 
-注意：モデル保存や、tar.gz形式のファイル作成は各自で行ってください。
+注意：モデル保存は、bert.ipbyや、tar.gz形式のファイル作成は各自で行ってください。
